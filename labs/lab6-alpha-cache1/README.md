@@ -28,3 +28,20 @@ $ ./sim-cache -config lab1_cache_2a.cfg -redir:sim sim_lab1_cache_2a.out ./test-
 | 128 sets              | 0.1423 | 0.0776 | 0.0474 | 0.0459 |
 | 256 sets              | 0.0836 | 0.0500 | 0.0460 | 0.0459 |
 | 512  sets             | 0.0700 | 0.0473 | 0.0459 | 0.0459 |
+
+
+replacement scheme :Random
+---------------------------
+
+```bash
+$ ./sim-cache -config lab1_cache_1b.cfg -redir:sim sim_lab1_cache_1b.out ./test-math
+```
+
+| Miss  Ratio (I-Cache) | 1-way  | 2-way  | 4-way  | 8-way  |
+| --------------------- | ------ | ------ | ------ | :----- |
+| 32  sets              | 0.2488 | 0.2413 | 0.2193 | 0.1590 |
+| 64  sets              | 0.2431 | 0.2213 | 0.1596 | 0.0740 |
+| 128 sets              | 0.2230 | 0.1682 | 0.0845 | 0.0441 |
+| 256 sets              | 0.1792 | 0.0975 | 0.0479 | 0.0365 |
+| 512  sets             | 0.1392 | 0.0642 | 0.0374 | 0.0334 |
+
