@@ -30,12 +30,20 @@ $ ./sim-cache -config cache_split.cfg -redir:sim sim_cache_split.out ./test-math
 
 ### Bonus part
 
+```bash
+$ ln -s ../../simplesim-3.0/sim-outorder
+
+$ ./sim-outorder -config perf-cache-split.cfg -redir:sim sim_perf_cache_split.out ./test-math
+
+$ ./sim-outorder -config perf-cache-unified.cfg -redir:sim sim_perf_cache_unified.out ./test-math
+```
+
 | Sets/Assoc | CPI Unified Cache | CPI Split Cache |
 | ---------- | ----------------- | --------------- |
-| 128/1      |                   |                 |
-| 128/2      |                   |                 |
-| 128/4      |                   |                 |
-| 2048/1     |                   |                 |
-| 2048/2     |                   |                 |
-| 2048/4     |                   |                 |
+| 128/1      | 5.0851            | 5.2281          |
+| 128/2      | 4.2683            | 4.8973          |
+| 128/4      | 2.5377            | 3.9869          |
+| 2048/1     | 1.5916            | 2.0780          |
+| 2048/2     | 1.1253            | 1.1816          |
+| 2048/4     | 1.1241            | 1.1241          |
 
