@@ -2,3 +2,4 @@
 OUT
 *.~lock*
 tags
+simplesim-3.0/*.o
