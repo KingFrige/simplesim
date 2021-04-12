@@ -1,3 +1,4 @@
 *.trc
 OUT
 *.~lock*
+tags
